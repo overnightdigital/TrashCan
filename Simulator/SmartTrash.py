@@ -8,6 +8,7 @@ import config
 
     
 def main(simulated_value, oauth_credentials_for_devicex, device_idx):
+        print("Started")
         # if the simulated value is -99 that means we are using the main device data
         '''****************************************************************************************
         HCP services Variables
