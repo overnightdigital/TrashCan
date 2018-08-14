@@ -5,10 +5,16 @@ import datetime
 import urllib3
 import config
 
-
     
 def main(simulated_value, oauth_credentials_for_devicex, device_idx):
         print("Started")
+        start_value = [1]
+
+        def get_SimulatedValue():
+                start_value[0] = start_value[0] + 5
+                if start_value[0] >= 50:
+                        start_value[0] = 1
+                return start_value[0]
         # if the simulated value is -99 that means we are using the main device data
         '''****************************************************************************************
         HCP services Variables
@@ -93,7 +99,8 @@ def main(simulated_value, oauth_credentials_for_devicex, device_idx):
                                 pulse_duration = end - start
                                 l_distance = pulse_duration * 17150
                                 l_distance = round(l_distance, 2)
-                                if simulated_value != -99: 
+                                if simulated_value != -99:
+                                        simulated_value = get_SimulatedValue()
                                         l_distance = simulated_value
                                 currentDistance = l_distance
                                 timestamp= int(time.time())			
