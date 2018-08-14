@@ -1,0 +1,14 @@
+New OAuth access token for device "TrashDevice" created.
+Token: 126bc0c1a8b049c0ff4c1cf1fc76dbb
+
+New OAuth access token for device "SimulatedTrashDevice1" created.
+Token: 535fdef65cafd87d2b92a2244b5a0d3
+
+New OAuth access token for device "SimulatedTrashDevice2" created.
+Token: 92dd5c811865d44158f2cf68c4cb53
+
+New OAuth access token for device "SimulatedTrashDevice3" created.
+Token: 644574efe03a918151299e2b6ba11223
+
+New OAuth access token for device "SimulatedTrashDevice4" created.
+Token: 3dd4e31ada6fd2a01437a0966ee26
